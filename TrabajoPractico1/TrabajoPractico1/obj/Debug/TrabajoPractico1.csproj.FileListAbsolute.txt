@@ -1,0 +1,13 @@
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\bin\Debug\TrabajoPractico1.exe.config
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\bin\Debug\TrabajoPractico1.exe
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\bin\Debug\TrabajoPractico1.pdb
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.csprojAssemblyReference.cache
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.frmPrincipal.resources
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.frmEjercicio1.resources
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.Properties.Resources.resources
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.csproj.GenerateResource.cache
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.exe
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.pdb
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.frmEjercicio2.resources
+C:\Users\USUARIO\OneDrive\Escritorio\TrabajoPractico1\TrabajoPractico1\obj\Debug\TrabajoPractico1.frmEjercicio3.resources
