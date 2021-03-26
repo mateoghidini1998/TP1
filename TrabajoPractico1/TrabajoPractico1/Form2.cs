@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TrabajoPractico1
@@ -28,7 +22,7 @@ namespace TrabajoPractico1
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if(tbNombre.Text.Trim().Length != 0)
+            if (tbNombre.Text.Trim().Length != 0)
             {
                 ltbNombres.Items.Add(tbNombre.Text);
                 tbNombre.Text = "";
