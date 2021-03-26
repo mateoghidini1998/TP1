@@ -107,6 +107,7 @@ namespace TrabajoPractico1
             this.btnPasarNombre.TabIndex = 6;
             this.btnPasarNombre.Text = ">";
             this.btnPasarNombre.UseVisualStyleBackColor = true;
+            this.btnPasarNombre.Click += new System.EventHandler(this.btnPasarNombre_Click);
             // 
             // btnPasarTodo
             // 
@@ -118,6 +119,7 @@ namespace TrabajoPractico1
             this.btnPasarTodo.TabIndex = 7;
             this.btnPasarTodo.Text = ">>";
             this.btnPasarTodo.UseVisualStyleBackColor = true;
+            this.btnPasarTodo.Click += new System.EventHandler(this.btnPasarTodo_Click);
             // 
             // frmEjercicio1
             // 

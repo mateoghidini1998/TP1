@@ -33,7 +33,7 @@ namespace TrabajoPractico1
             this.btnEjercicio1 = new System.Windows.Forms.Button();
             this.btnEjercicio2 = new System.Windows.Forms.Button();
             this.btnEjercicio3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIntegrantes = new System.Windows.Forms.TextBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -70,19 +70,18 @@ namespace TrabajoPractico1
             this.btnEjercicio3.UseVisualStyleBackColor = true;
             this.btnEjercicio3.Click += new System.EventHandler(this.btnEjercicio3_Click);
             // 
-            // textBox1
+            // txtIntegrantes
             // 
-            this.textBox1.AcceptsTab = true;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(139, 163);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(339, 162);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.txtIntegrantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIntegrantes.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtIntegrantes.Location = new System.Drawing.Point(139, 163);
+            this.txtIntegrantes.Multiline = true;
+            this.txtIntegrantes.Name = "txtIntegrantes";
+            this.txtIntegrantes.ReadOnly = true;
+            this.txtIntegrantes.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtIntegrantes.Size = new System.Drawing.Size(360, 173);
+            this.txtIntegrantes.TabIndex = 3;
+            this.txtIntegrantes.Text = resources.GetString("txtIntegrantes.Text");
             // 
             // btnSalir
             // 
@@ -102,7 +101,7 @@ namespace TrabajoPractico1
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(719, 366);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtIntegrantes);
             this.Controls.Add(this.btnEjercicio3);
             this.Controls.Add(this.btnEjercicio2);
             this.Controls.Add(this.btnEjercicio1);
@@ -119,7 +118,7 @@ namespace TrabajoPractico1
         private System.Windows.Forms.Button btnEjercicio1;
         private System.Windows.Forms.Button btnEjercicio2;
         private System.Windows.Forms.Button btnEjercicio3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIntegrantes;
         private System.Windows.Forms.Button btnSalir;
     }
 }
