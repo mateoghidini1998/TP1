@@ -25,5 +25,13 @@ namespace TrabajoPractico1
 
             frm.Show();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (txtIngresoNombre.Text.Length != 0 && txtIngresoApellido.Text.Length != 0)
+            {
+              //  lbElementos.Items.Add(txtIngresoNombre + txtIngresoApellido);
+            }
+        }
     }
 }

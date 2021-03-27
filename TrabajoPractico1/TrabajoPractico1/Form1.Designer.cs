@@ -34,11 +34,11 @@ namespace TrabajoPractico1
             this.btnEjercicio2 = new System.Windows.Forms.Button();
             this.btnEjercicio3 = new System.Windows.Forms.Button();
             this.txtIntegrantes = new System.Windows.Forms.TextBox();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEjercicio1
             // 
+            this.btnEjercicio1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEjercicio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEjercicio1.Location = new System.Drawing.Point(98, 55);
             this.btnEjercicio1.Name = "btnEjercicio1";
@@ -50,6 +50,7 @@ namespace TrabajoPractico1
             // 
             // btnEjercicio2
             // 
+            this.btnEjercicio2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEjercicio2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEjercicio2.Location = new System.Drawing.Point(274, 55);
             this.btnEjercicio2.Name = "btnEjercicio2";
@@ -61,6 +62,7 @@ namespace TrabajoPractico1
             // 
             // btnEjercicio3
             // 
+            this.btnEjercicio3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEjercicio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEjercicio3.Location = new System.Drawing.Point(475, 55);
             this.btnEjercicio3.Name = "btnEjercicio3";
@@ -72,27 +74,16 @@ namespace TrabajoPractico1
             // 
             // txtIntegrantes
             // 
+            this.txtIntegrantes.Cursor = System.Windows.Forms.Cursors.No;
             this.txtIntegrantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIntegrantes.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtIntegrantes.Location = new System.Drawing.Point(139, 163);
             this.txtIntegrantes.Multiline = true;
             this.txtIntegrantes.Name = "txtIntegrantes";
             this.txtIntegrantes.ReadOnly = true;
-            this.txtIntegrantes.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtIntegrantes.Size = new System.Drawing.Size(360, 173);
+            this.txtIntegrantes.Size = new System.Drawing.Size(360, 155);
             this.txtIntegrantes.TabIndex = 3;
             this.txtIntegrantes.Text = resources.GetString("txtIntegrantes.Text");
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(581, 292);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(82, 33);
-            this.btnSalir.TabIndex = 4;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmPrincipal
             // 
@@ -100,12 +91,11 @@ namespace TrabajoPractico1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(719, 366);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtIntegrantes);
             this.Controls.Add(this.btnEjercicio3);
             this.Controls.Add(this.btnEjercicio2);
             this.Controls.Add(this.btnEjercicio1);
-            this.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "frmPrincipal";
             this.Text = "Formulario Principal";
             this.ResumeLayout(false);
@@ -119,7 +109,6 @@ namespace TrabajoPractico1
         private System.Windows.Forms.Button btnEjercicio2;
         private System.Windows.Forms.Button btnEjercicio3;
         private System.Windows.Forms.TextBox txtIntegrantes;
-        private System.Windows.Forms.Button btnSalir;
     }
 }
 
