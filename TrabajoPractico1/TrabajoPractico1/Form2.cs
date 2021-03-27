@@ -69,7 +69,7 @@ namespace TrabajoPractico1
             else
             {
                 bool existe = false;
-                foreach (string nombre1 in ltbNombres.Items)
+                foreach (string nombre1 in ltbNombres.Items) // Verifico nombre por nombre
                 {
                     foreach (string nombre2 in ltbNombresPasados.Items)
                     {
