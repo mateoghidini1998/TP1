@@ -31,14 +31,14 @@ namespace TrabajoPractico1
         {
             this.btnVolverEj2 = new System.Windows.Forms.Button();
             this.gbIngresoDatos = new System.Windows.Forms.GroupBox();
-            this.gpElementos = new System.Windows.Forms.GroupBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnBorrar = new System.Windows.Forms.Button();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtIngresoNombre = new System.Windows.Forms.TextBox();
             this.txtIngresoApellido = new System.Windows.Forms.TextBox();
+            this.txtIngresoNombre = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.gpElementos = new System.Windows.Forms.GroupBox();
             this.lbElementos = new System.Windows.Forms.ListBox();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.gbIngresoDatos.SuspendLayout();
             this.gpElementos.SuspendLayout();
             this.SuspendLayout();
@@ -69,38 +69,31 @@ namespace TrabajoPractico1
             this.gbIngresoDatos.TabStop = false;
             this.gbIngresoDatos.Text = "Ingreso de datos";
             // 
-            // gpElementos
+            // txtIngresoApellido
             // 
-            this.gpElementos.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.gpElementos.Controls.Add(this.lbElementos);
-            this.gpElementos.Controls.Add(this.btnBorrar);
-            this.gpElementos.Location = new System.Drawing.Point(445, 38);
-            this.gpElementos.Name = "gpElementos";
-            this.gpElementos.Size = new System.Drawing.Size(312, 343);
-            this.gpElementos.TabIndex = 2;
-            this.gpElementos.TabStop = false;
-            this.gpElementos.Text = "Elementos";
+            this.txtIngresoApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngresoApellido.Location = new System.Drawing.Point(98, 158);
+            this.txtIngresoApellido.Name = "txtIngresoApellido";
+            this.txtIngresoApellido.Size = new System.Drawing.Size(220, 26);
+            this.txtIngresoApellido.TabIndex = 4;
             // 
-            // btnAgregar
+            // txtIngresoNombre
             // 
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(98, 303);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(97, 30);
-            this.btnAgregar.TabIndex = 0;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.txtIngresoNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngresoNombre.Location = new System.Drawing.Point(98, 109);
+            this.txtIngresoNombre.Name = "txtIngresoNombre";
+            this.txtIngresoNombre.Size = new System.Drawing.Size(220, 26);
+            this.txtIngresoNombre.TabIndex = 3;
             // 
-            // btnBorrar
+            // txtApellido
             // 
-            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.Location = new System.Drawing.Point(118, 303);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(93, 30);
-            this.btnBorrar.TabIndex = 3;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.Location = new System.Drawing.Point(6, 158);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.ReadOnly = true;
+            this.txtApellido.Size = new System.Drawing.Size(68, 26);
+            this.txtApellido.TabIndex = 2;
+            this.txtApellido.Text = "Apellido: ";
             // 
             // txtNombre
             // 
@@ -113,31 +106,28 @@ namespace TrabajoPractico1
             this.txtNombre.TabIndex = 1;
             this.txtNombre.Text = "Nombre:";
             // 
-            // txtApellido
+            // btnAgregar
             // 
-            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(6, 158);
-            this.txtApellido.Name = "txtApellido";
-            this.txtApellido.ReadOnly = true;
-            this.txtApellido.Size = new System.Drawing.Size(68, 26);
-            this.txtApellido.TabIndex = 2;
-            this.txtApellido.Text = "Apellido: ";
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(98, 303);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(97, 30);
+            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // txtIngresoNombre
+            // gpElementos
             // 
-            this.txtIngresoNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIngresoNombre.Location = new System.Drawing.Point(98, 109);
-            this.txtIngresoNombre.Name = "txtIngresoNombre";
-            this.txtIngresoNombre.Size = new System.Drawing.Size(220, 26);
-            this.txtIngresoNombre.TabIndex = 3;
-            // 
-            // txtIngresoApellido
-            // 
-            this.txtIngresoApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIngresoApellido.Location = new System.Drawing.Point(98, 158);
-            this.txtIngresoApellido.Name = "txtIngresoApellido";
-            this.txtIngresoApellido.Size = new System.Drawing.Size(220, 26);
-            this.txtIngresoApellido.TabIndex = 4;
+            this.gpElementos.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.gpElementos.Controls.Add(this.lbElementos);
+            this.gpElementos.Controls.Add(this.btnBorrar);
+            this.gpElementos.Location = new System.Drawing.Point(445, 38);
+            this.gpElementos.Name = "gpElementos";
+            this.gpElementos.Size = new System.Drawing.Size(312, 343);
+            this.gpElementos.TabIndex = 2;
+            this.gpElementos.TabStop = false;
+            this.gpElementos.Text = "Elementos";
             // 
             // lbElementos
             // 
@@ -146,6 +136,17 @@ namespace TrabajoPractico1
             this.lbElementos.Name = "lbElementos";
             this.lbElementos.Size = new System.Drawing.Size(254, 238);
             this.lbElementos.TabIndex = 4;
+            // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.Location = new System.Drawing.Point(118, 303);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(93, 30);
+            this.btnBorrar.TabIndex = 3;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // frmEjercicio2
             // 
