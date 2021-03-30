@@ -64,7 +64,7 @@ namespace TrabajoPractico1
             // 
             this.btnEjercicio3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEjercicio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEjercicio3.Location = new System.Drawing.Point(475, 55);
+            this.btnEjercicio3.Location = new System.Drawing.Point(474, 55);
             this.btnEjercicio3.Name = "btnEjercicio3";
             this.btnEjercicio3.Size = new System.Drawing.Size(124, 47);
             this.btnEjercicio3.TabIndex = 2;

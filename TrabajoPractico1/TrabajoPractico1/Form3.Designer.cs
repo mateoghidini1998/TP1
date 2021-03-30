@@ -135,6 +135,7 @@ namespace TrabajoPractico1
             this.lbElementos.Location = new System.Drawing.Point(27, 44);
             this.lbElementos.Name = "lbElementos";
             this.lbElementos.Size = new System.Drawing.Size(254, 238);
+            this.lbElementos.Sorted = true;
             this.lbElementos.TabIndex = 4;
             // 
             // btnBorrar

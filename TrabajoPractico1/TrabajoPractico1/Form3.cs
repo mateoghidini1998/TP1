@@ -48,7 +48,14 @@ namespace TrabajoPractico1
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            lbElementos.Items.Remove(lbElementos.SelectedItem);
+            if(lbElementos.SelectedIndex != -1)
+            {
+                lbElementos.Items.Remove(lbElementos.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("No hay item seleccionado");
+            }
         }
     }
 }
