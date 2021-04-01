@@ -25,5 +25,37 @@ namespace TrabajoPractico1
 
             frm.Show();
         }
+
+        private void btnSeleccion_Click(object sender, EventArgs e)
+        {
+            string cadena = "Usted selecciono los siguientes elementos: \n";
+
+            if(rbFemenino.Checked == true)
+            {
+                cadena += rbFemenino.Text;
+            }
+            else
+            {
+                cadena += rbMasculino.Text;
+            }
+
+            if(rbCasado.Checked == true)
+            {
+                cadena += rbCasado.Text;
+            }
+            else
+            {
+                cadena += rbSoltero.Text;
+            }
+
+            cadena += "\n";
+
+            foreach(object item in clbProfecion.CheckedItems)
+            {
+                cadena += "-" + item.ToString() + "\n";
+            }
+
+            lblMostrarSeleccion.Text = cadena;
+        }
     }
 }

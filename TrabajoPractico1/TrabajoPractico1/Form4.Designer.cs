@@ -31,13 +31,13 @@ namespace TrabajoPractico1
         {
             this.btnVolverEj3 = new System.Windows.Forms.Button();
             this.gbSexo = new System.Windows.Forms.GroupBox();
-            this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
-            this.rbFemenino = new System.Windows.Forms.RadioButton();
             this.rbMasculino = new System.Windows.Forms.RadioButton();
-            this.rbCasado = new System.Windows.Forms.RadioButton();
+            this.rbFemenino = new System.Windows.Forms.RadioButton();
+            this.gbEstadoCivil = new System.Windows.Forms.GroupBox();
             this.rbSoltero = new System.Windows.Forms.RadioButton();
+            this.rbCasado = new System.Windows.Forms.RadioButton();
             this.btnSeleccion = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.clbProfecion = new System.Windows.Forms.CheckedListBox();
             this.lblMostrarSeleccion = new System.Windows.Forms.Label();
             this.gbSexo.SuspendLayout();
             this.gbEstadoCivil.SuspendLayout();
@@ -66,17 +66,15 @@ namespace TrabajoPractico1
             this.gbSexo.TabStop = false;
             this.gbSexo.Text = "Sexo";
             // 
-            // gbEstadoCivil
+            // rbMasculino
             // 
-            this.gbEstadoCivil.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.gbEstadoCivil.Controls.Add(this.rbSoltero);
-            this.gbEstadoCivil.Controls.Add(this.rbCasado);
-            this.gbEstadoCivil.Location = new System.Drawing.Point(450, 12);
-            this.gbEstadoCivil.Name = "gbEstadoCivil";
-            this.gbEstadoCivil.Size = new System.Drawing.Size(183, 115);
-            this.gbEstadoCivil.TabIndex = 2;
-            this.gbEstadoCivil.TabStop = false;
-            this.gbEstadoCivil.Text = "Estado Civil";
+            this.rbMasculino.AutoSize = true;
+            this.rbMasculino.Location = new System.Drawing.Point(45, 72);
+            this.rbMasculino.Name = "rbMasculino";
+            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rbMasculino.TabIndex = 1;
+            this.rbMasculino.Text = "Masculino";
+            this.rbMasculino.UseVisualStyleBackColor = true;
             // 
             // rbFemenino
             // 
@@ -90,15 +88,27 @@ namespace TrabajoPractico1
             this.rbFemenino.Text = "Femenino";
             this.rbFemenino.UseVisualStyleBackColor = true;
             // 
-            // rbMasculino
+            // gbEstadoCivil
             // 
-            this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(45, 72);
-            this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
-            this.rbMasculino.TabIndex = 1;
-            this.rbMasculino.Text = "Masculino";
-            this.rbMasculino.UseVisualStyleBackColor = true;
+            this.gbEstadoCivil.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.gbEstadoCivil.Controls.Add(this.rbSoltero);
+            this.gbEstadoCivil.Controls.Add(this.rbCasado);
+            this.gbEstadoCivil.Location = new System.Drawing.Point(450, 12);
+            this.gbEstadoCivil.Name = "gbEstadoCivil";
+            this.gbEstadoCivil.Size = new System.Drawing.Size(183, 115);
+            this.gbEstadoCivil.TabIndex = 2;
+            this.gbEstadoCivil.TabStop = false;
+            this.gbEstadoCivil.Text = "Estado Civil";
+            // 
+            // rbSoltero
+            // 
+            this.rbSoltero.AutoSize = true;
+            this.rbSoltero.Location = new System.Drawing.Point(52, 76);
+            this.rbSoltero.Name = "rbSoltero";
+            this.rbSoltero.Size = new System.Drawing.Size(69, 17);
+            this.rbSoltero.TabIndex = 1;
+            this.rbSoltero.Text = "Soltero/a";
+            this.rbSoltero.UseVisualStyleBackColor = true;
             // 
             // rbCasado
             // 
@@ -112,16 +122,6 @@ namespace TrabajoPractico1
             this.rbCasado.Text = "Casado/a";
             this.rbCasado.UseVisualStyleBackColor = true;
             // 
-            // rbSoltero
-            // 
-            this.rbSoltero.AutoSize = true;
-            this.rbSoltero.Location = new System.Drawing.Point(52, 76);
-            this.rbSoltero.Name = "rbSoltero";
-            this.rbSoltero.Size = new System.Drawing.Size(69, 17);
-            this.rbSoltero.TabIndex = 1;
-            this.rbSoltero.Text = "Soltero/a";
-            this.rbSoltero.UseVisualStyleBackColor = true;
-            // 
             // btnSeleccion
             // 
             this.btnSeleccion.Location = new System.Drawing.Point(289, 242);
@@ -130,30 +130,30 @@ namespace TrabajoPractico1
             this.btnSeleccion.TabIndex = 3;
             this.btnSeleccion.Text = "Mostrar Seleccion";
             this.btnSeleccion.UseVisualStyleBackColor = true;
+            this.btnSeleccion.Click += new System.EventHandler(this.btnSeleccion_Click);
             // 
-            // checkedListBox1
+            // clbProfecion
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.clbProfecion.FormattingEnabled = true;
+            this.clbProfecion.Items.AddRange(new object[] {
             "Data Entry",
             "Operador de PC",
             "Programador",
             "Reparador de PC",
             "Tester"});
-            this.checkedListBox1.Location = new System.Drawing.Point(251, 142);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(215, 94);
-            this.checkedListBox1.TabIndex = 4;
+            this.clbProfecion.Location = new System.Drawing.Point(251, 142);
+            this.clbProfecion.Name = "clbProfecion";
+            this.clbProfecion.Size = new System.Drawing.Size(215, 94);
+            this.clbProfecion.TabIndex = 4;
             // 
             // lblMostrarSeleccion
             // 
             this.lblMostrarSeleccion.AutoSize = true;
-            this.lblMostrarSeleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMostrarSeleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMostrarSeleccion.Location = new System.Drawing.Point(109, 285);
             this.lblMostrarSeleccion.Name = "lblMostrarSeleccion";
-            this.lblMostrarSeleccion.Size = new System.Drawing.Size(483, 31);
+            this.lblMostrarSeleccion.Size = new System.Drawing.Size(0, 24);
             this.lblMostrarSeleccion.TabIndex = 5;
-            this.lblMostrarSeleccion.Text = "Usted selecciono los siguientes datos: ";
             // 
             // frmEjercicio3
             // 
@@ -162,7 +162,7 @@ namespace TrabajoPractico1
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblMostrarSeleccion);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.clbProfecion);
             this.Controls.Add(this.btnSeleccion);
             this.Controls.Add(this.gbEstadoCivil);
             this.Controls.Add(this.gbSexo);
@@ -188,7 +188,7 @@ namespace TrabajoPractico1
         private System.Windows.Forms.RadioButton rbSoltero;
         private System.Windows.Forms.RadioButton rbCasado;
         private System.Windows.Forms.Button btnSeleccion;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox clbProfecion;
         private System.Windows.Forms.Label lblMostrarSeleccion;
     }
 }
