@@ -39,6 +39,8 @@ namespace TrabajoPractico1
                 cadena += rbMasculino.Text;
             }
 
+            cadena += "\n";
+
             if(rbCasado.Checked == true)
             {
                 cadena += rbCasado.Text;

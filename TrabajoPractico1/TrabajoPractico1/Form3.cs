@@ -29,9 +29,9 @@ namespace TrabajoPractico1
         private void btnAgregar_Click(object sender, EventArgs e)
         {
                 //  lbElementos.Items.Add(txtIngresoNombre + txtIngresoApellido);
-            if (txtIngresoNombre.Text.Length != 0)
+            if (txtIngresoNombre.Text.Trim().Length != 0)
             {
-                if (txtIngresoApellido.Text.Length != 0)
+                if (txtIngresoApellido.Text.Trim().Length != 0)
                 {
                     string nombreCompleto;
                     nombreCompleto = txtIngresoApellido.Text.Trim() + " " + txtIngresoNombre.Text.Trim();
