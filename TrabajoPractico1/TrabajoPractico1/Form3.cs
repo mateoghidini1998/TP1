@@ -29,21 +29,33 @@ namespace TrabajoPractico1
         private void btnAgregar_Click(object sender, EventArgs e)
         {
                 //  lbElementos.Items.Add(txtIngresoNombre + txtIngresoApellido);
+            
+            
             if (txtIngresoNombre.Text.Trim().Length != 0)
             {
                 if (txtIngresoApellido.Text.Trim().Length != 0)
                 {
                     string nombreCompleto;
-                    nombreCompleto = txtIngresoApellido.Text.Trim() + " " + txtIngresoNombre.Text.Trim();
-                    txtIngresoNombre.Text = "";
-                    txtIngresoApellido.Text = "";
-                    lbElementos.Items.Add(nombreCompleto);
+                    nombreCompleto = txtIngresoApellido.Text.Trim().ToUpper() + " " + txtIngresoNombre.Text.Trim().ToUpper();
+                    
+                    if(lbElementos.Items.Contains(nombreCompleto))
+                    {
+                        MessageBox.Show("No se permiten nombres duplicados", "Advertencia");
+                    }
+                    else
+                    {
+                        txtIngresoNombre.Text = "";
+                        txtIngresoApellido.Text = "";
+                        lbElementos.Items.Add(nombreCompleto);
+                    }
                 }
                 else
                     MessageBox.Show("Debe ingresar un apellido", "ERROR");
             }
             else
                 MessageBox.Show("Debe ingresar un nombre", "ERROR");
+
+
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
